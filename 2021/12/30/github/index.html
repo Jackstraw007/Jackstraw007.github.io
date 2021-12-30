@@ -5,19 +5,19 @@
   
 
   
-  <title>Hello World | Jeniac</title>
+  <title>GitHub 配置 | Jeniac</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="Github is great!tips： git添加远程库用Clone with SSH - Use a password protected SSH key.就不会每次要求输入密码 看了好多资料终于搞定了git 中clone命令报错这个问题，废话不多说直接上步骤希望对大家有帮助。 1   删除.ssh文件夹（直接搜索该文件夹）下的known_hosts(手动删除即可，不需要git） 2   在">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://jackstraw007.github.io/2021/12/30/hello-world/index.html">
+<meta property="og:title" content="GitHub 配置">
+<meta property="og:url" content="http://jackstraw007.github.io/2021/12/30/github/index.html">
 <meta property="og:site_name" content="Jeniac">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="Github is great!tips： git添加远程库用Clone with SSH - Use a password protected SSH key.就不会每次要求输入密码 看了好多资料终于搞定了git 中clone命令报错这个问题，废话不多说直接上步骤希望对大家有帮助。 1   删除.ssh文件夹（直接搜索该文件夹）下的known_hosts(手动删除即可，不需要git） 2   在">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-12-30T02:54:44.363Z">
-<meta property="article:modified_time" content="2021-12-30T06:38:36.878Z">
+<meta property="article:published_time" content="2021-12-30T06:45:03.433Z">
+<meta property="article:modified_time" content="2021-12-30T06:45:58.752Z">
 <meta property="article:author" content="Chen">
-<meta property="article:tag" content="test">
+<meta property="article:tag" content="IT">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Jeniac" type="application/atom+xml">
@@ -67,10 +67,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-github" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2021/12/30/hello-world/" class="article-date">
-  <time datetime="2021-12-30T02:54:44.363Z" itemprop="datePublished">2021-12-30</time>
+    <a href="/2021/12/30/github/" class="article-date">
+  <time datetime="2021-12-30T06:45:03.433Z" itemprop="datePublished">2021-12-30</time>
 </a>
     
   </div>
@@ -81,7 +81,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      GitHub 配置
     </h1>
   
 
@@ -89,27 +89,33 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+        <h1 id="Github-is-great"><a href="#Github-is-great" class="headerlink" title="Github is great!"></a>Github is great!</h1><p>tips：</p>
+<p>git添加远程库用<code>Clone with SSH - Use a password protected SSH key.</code>就不会每次要求输入密码</p>
+<p>看了好多资料终于搞定了git 中clone命令报错这个问题，废话不多说直接上步骤希望对大家有帮助。</p>
+<p>1   删除.ssh文件夹（直接搜索该文件夹）下的known_hosts(手动删除即可，不需要git）</p>
+<p>2   在下载好的Git中的bin目录下打开bash.exe输入命令ssh-keygen -t rsa -C “username” (注：username为你git上的用户名)，如果执行成功。返回：</p>
+<p>Generating public/private rsa key pair.<br>Enter file in which to save the key (/Users/username/.ssh/id_rsa): //这里的username是电脑上的用户名，这个地址也是文件的存储地址，然后我们按</p>
+<p>回车，如果你以前有存储地址会返回/Users/your username/.ssh/id_rsa already exists.Overwrite (y/n)?直接输入y回车。如果以前没有储存地址就会出现</p>
+<p>Enter passphrase(empty for no passphrase);也直接回车，两种情况回车后都会出现 Enter same passphrase again 然后接着回车会显示一长串内容其中</p>
+<p>还有一些..o.. o oo .oS. 之类的代码，这说明SSH key就已经生成了。文件目录就是：username/.ssh/id_rsa.pub.</p>
+<p>3  然后找到系统自动在.ssh文件夹下生成两个文件，id_rsa和id_rsa.pub，用记事本打开id_rsa.pub将全部的内容复制。</p>
+<p>4  打开<a target="_blank" rel="noopener" href="https://github.com/%EF%BC%8C%E7%99%BB%E9%99%86%E4%BD%A0%E7%9A%84%E8%B4%A6%E6%88%B7%EF%BC%8C%E8%BF%9B%E5%85%A5%E8%AE%BE%E7%BD%AE%EF%BC%88Settings%EF%BC%89%E6%89%BE%E5%88%B0">https://github.com/，登陆你的账户，进入设置（Settings）找到</a> New SSH Keys</p>
+<p>5  然后将你复制的内容粘贴到key中</p>
+<pre><code>再点击Add SSH Key                     
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+ok还有最后一步
+</code></pre>
+<p>6  仍然在bash.exe中输入ssh -T <a href="mailto:&#103;&#x69;&#x74;&#x40;&#103;&#x69;&#x74;&#104;&#117;&#98;&#x2e;&#99;&#x6f;&#x6d;">&#103;&#x69;&#x74;&#x40;&#103;&#x69;&#x74;&#104;&#117;&#98;&#x2e;&#99;&#x6f;&#x6d;</a>然后会跳出一堆内容你只需输入yes回车就完事了，然后他会提示你成功了。</p>
+<pre><code>然后你就可以正常使用git clone命令了，最后祝你好运哈哈！
+</code></pre>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://jackstraw007.github.io/2021/12/30/hello-world/" data-id="ckxslzdp00003xwuk0srd4efd" class="article-share-link">Share</a>
+      <a data-url="http://jackstraw007.github.io/2021/12/30/github/" data-id="ckxslzdov0001xwukcx3e3lqw" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/test/" rel="tag">test</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/IT/" rel="tag">IT</a></li></ul>
 
     </footer>
   </div>
@@ -117,15 +123,20 @@
     
 <nav id="article-nav">
   
-    <a href="/2021/12/30/hello-Jeniac/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2021/12/30/time_manage/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          Hello Jeniac
+          马斯克的时间管理方法
         
       </div>
     </a>
   
+  
+    <a href="/2021/12/30/hello-Jeniac/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello Jeniac</div>
+    </a>
   
 </nav>
 
